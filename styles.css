@@ -5,7 +5,7 @@ body {
 
 header {
     position: relative;
-    background-color: #f2f2f2; /* Cinza claro */
+    background-color: #ffea00; /* Cinza claro */
     text-align: center;
     padding: 1rem 0;
     overflow: hidden;
@@ -25,7 +25,7 @@ header {
 .carrossel span {
     font-family: 'Burbank Big Condensed Bold', sans-serif;
     font-size: 2rem;
-    color: #333;
+    color: #000000;
     padding: 0 20px;
     white-space: nowrap;
 }
@@ -42,12 +42,18 @@ header {
 
 nav {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
     background-color: #f8f8f8;
     position: sticky;
     top: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto; /* Mantém a proporção da imagem */
 }
 
 nav a {
@@ -62,6 +68,7 @@ nav a {
     color: #333;
     font-size: 1.2rem;
 }
+
 
 
 
@@ -114,5 +121,52 @@ h1 {
     border-radius: 5px;
 }
 
+.produtos {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.produto .botao {
+    background-color: #ff7f50;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 
