@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: #f2f2f2; /* Cinza claro */
+    text-align: center;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.banner-rotativo {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    animation: slide 10s linear infinite;
+}
+
+.carrossel span {
+    font-family: 'Burbank Big Condensed Bold', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+/* Animação de carrossel */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+
+
+h1 {
+    font-size: 2em;
+}
+
+.section-fundo {
+    position: relative;
+    padding: 50px;
+    color: white;
+    min-height: 500px; /* Defina uma altura mínima para garantir que a seção tenha uma altura visível */
+}
+
+.imagem-fundo,
+.imagem-fundo-2,
+.imagem-fundo-3,
+.imagem-fundo-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -4; /* Todas as imagens ficam atrás do conteúdo */
+}
+
+.imagem-fundo-2 {
+    z-index: -3; /* Segunda imagem */
+}
+
+.imagem-fundo-3 {
+    z-index: -2; /* Terceira imagem */
+}
+
+.imagem-fundo-4 {
+    z-index: -1; /* Quarta imagem, mais próxima ao conteúdo */
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.botao {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
